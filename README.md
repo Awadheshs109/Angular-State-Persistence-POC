@@ -1,27 +1,33 @@
-# AppParentChild
+# Angular State Persistence POC
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.11.
+This project demonstrates a Proof of Concept (POC) for state persistence in an Angular application using a custom route reuse strategy. The application allows users to navigate between a parent and child component while preserving the state of the parent component.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Custom Route Reuse Strategy**: Implements a custom route reuse strategy to persist the state of the parent component when navigating to the child component and back.
+- **Dynamic Data Loading**: Fetches data from the [JSONPlaceholder](https://jsonplaceholder.typicode.com/) API based on user selection.
+- **Highcharts Integration**: Displays a Sunburst chart using Highcharts library.
+- **Custom Dropdown Component**: A reusable dropdown component with search functionality.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular**: Frontend framework for building the application.
+- **Highcharts**: Library for rendering interactive charts.
+- **Bootstrap**: CSS framework for styling the application.
+- **JSONPlaceholder**: Fake online REST API for testing and prototyping.
 
-## Build
+## Project Structure
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **src/app/components**: Contains the parent and child components, along with a custom dropdown component.
+- **src/app/custom-route-reuse-strategy.ts**: Custom route reuse strategy implementation.
+- **src/app/app-routing.module.ts**: Routing configuration with scroll position restoration and anchor scrolling.
+- **src/app/app.module.ts**: Main application module with custom route reuse strategy applied.
+- **src/assets**: Placeholder for static assets.
+- **src/environments**: Environment configuration files for development and production.
 
-## Running unit tests
+## Setup and Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Awadheshs109/Angular-State-Persistence-POC.git
+   cd angular-state-persistence-poc
