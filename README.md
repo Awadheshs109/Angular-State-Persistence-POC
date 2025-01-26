@@ -34,18 +34,16 @@ This project demonstrates a Proof of Concept (POC) for state persistence in an A
    cd Angular-State-Persistence-POC
 
 2. **Navigate to the project directory**:
-
-```bash
+   ```bash
 cd Angular-State-Persistence-POC
 
 3. **Install dependencies**:
-
-```bash
-npm install
+   ```bash
+   npm install
 4. **Run the application**:
-
-```bash
-npm start
+   ```bash
+   npm start
 5. **Open the application**:
-Open your browser and navigate to ```bash
-http://localhost:4200/
+   Open your browser and navigate to
+   ```bash
+   http://localhost:4200/
