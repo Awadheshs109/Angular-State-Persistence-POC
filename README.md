@@ -31,11 +31,10 @@ This project demonstrates a Proof of Concept (POC) for state persistence in an A
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/Awadheshs109/Angular-State-Persistence-POC.git
-   cd Angular-State-Persistence-POC
 
 2. **Navigate to the project directory**:
    ```bash
-cd Angular-State-Persistence-POC
+   cd Angular-State-Persistence-POC
 
 3. **Install dependencies**:
    ```bash
