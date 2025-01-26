@@ -1,0 +1,18 @@
+<div class="dropdown">
+  <input
+    type="text"
+    [(ngModel)]="searchText"
+    (ngModelChange)="onSearchChange()"
+    placeholder="Search..."
+    class="form-control"
+  />
+  <ul class="list-group">
+    <li
+      *ngFor="let item of filteredItems"
+      class="list-group-item"
+      (click)="onSelect(item)"
+    >
+      {{ item }}
+    </li>
+  </ul>
+</div>

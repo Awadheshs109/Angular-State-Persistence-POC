@@ -1,0 +1,12 @@
+<div class="container mt-5">
+  <!-- Back Button -->
+  <button class="btn btn-secondary mt-3" (click)="goBack()">Back</button>
+  <h2>Post Details</h2>
+
+
+  <div *ngIf="postDetails">
+    <p><strong>ID:</strong> {{ postDetails.id }}</p>
+    <p><strong>Title:</strong> {{ postDetails.title }}</p>
+    <p><strong>Body:</strong> {{ postDetails.body }}</p>
+  </div>
+</div>

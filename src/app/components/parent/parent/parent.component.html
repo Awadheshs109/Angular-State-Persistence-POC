@@ -1,0 +1,25 @@
+<div id="chartContainer" style="width: 100%; height: 400px;"></div>
+
+
+<select (change)="onResourceSelected($event)" [(ngModel)]="selectedResourceName">
+  <option *ngFor="let resource of resources" [value]="resource">{{ resource }}</option>
+</select>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let record of selectedResource">
+      <td>{{ record.id }}</td>
+      <td>{{ record.title || record.name || record.albumId || record.username || record.completed || record.body }}</td>
+      <td>
+        <button class="btn btn-primary" (click)="viewRecord(selectedResourceName, record.id)">View</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

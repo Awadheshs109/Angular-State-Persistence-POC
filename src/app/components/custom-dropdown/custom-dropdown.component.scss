@@ -1,0 +1,29 @@
+.dropdown {
+  width: 200px;
+  position: relative;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.list-group {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 5px;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  background-color: white;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item:hover {
+  background-color: #f1f1f1;
+}
